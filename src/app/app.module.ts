@@ -13,13 +13,8 @@ import { DatabindingExampleComponent } from './databinding-example/databinding-e
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< .merge_file_a14184
     Lalatest0426Component,
     Lala0426Component
-=======
-    DatabindingExampleComponent,
-    SafePipe
->>>>>>> .merge_file_a17512
   ],
   imports: [
     BrowserModule,
