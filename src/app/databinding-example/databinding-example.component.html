@@ -1,0 +1,38 @@
+<div>
+    <div>
+        最簡易的data binding : <span>{{light}}</span><!-- 一般簡易的databinding-->
+    </div>
+    <div>
+        變異的data binding : <span class="fullname" [innerText]="light"></span>
+    </div>
+</div>
+<br>&nbsp;
+<div>
+    <div class="bold">
+        -------------- 使用input了解三種 binding --------------
+    </div>
+    <div>
+        <div>
+            no binding : <input type="text" value="light"><!--input的value寫什麼字就是什麼字-->
+            <br>
+            data binding : <input type="text" [value]="light"><!--加上中括號，代表會將資料傳到網頁，也就是變數從ts傳到html-->
+            <br>
+            event binding : <button (click)="demo1()">測試 property binding</button><!--加上小括號，代表會將網頁傳到資料，也就是變數從html傳到ts-->
+            <br>
+            失敗的event binding : <input type="text" (value)="light"><!-- 因為value這個屬性只能接受data binding --><button (click)="demo1()">測試value進行event binding</button>
+        </div>
+        <!-- ngModel使用 -->
+        <div>
+            two way binding : <input type="text" [(ngModel)]="ngModelLight">
+            <button (click)="demo2()">測試two way binding</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- innerHTML綁定說明 -->
+<!-- {{innerHTMLbinding}}
+<span [innerHTML]="innerHTMLbinding"></span>
+<span [innerHTML]="innerHTMLbinding | safe:'html'"></span> -->
+
+<!-- ngFor & ngIf -->
