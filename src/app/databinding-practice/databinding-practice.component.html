@@ -1,0 +1,15 @@
+<span>{{light}}</span>
+<span>{{number}}</span>
+Hello <span>{{targetPerson.pdfName}}</span> world
+<br>
+<span [innerText]="light"></span>
+<br>
+<span [innerHTML]="light"></span>
+<br>
+<!-- 文字打甚麼就會出現甚麼 -->
+<!-- {{innerHTMLbinding}} -->
+<!-- <span [innerText]="innerHTMLbinding"></span> -->
+<!-- 只會讀取HTML的標籤，但不會讀取CSS -->
+哩賀 <span [innerHTML]="innerHTMLbinding"></span>
+<!-- 目前的綁法如下 -->
+哩賀 <span [innerHTML]="innerHTMLbinding | safe:'html'"></span>

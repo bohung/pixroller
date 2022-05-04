@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {SafePipe} from './safe.pipe';
-import { DatabindingExampleComponent } from './databinding-example/databinding-example.component'
+import { DatabindingExampleComponent } from './databinding-example/databinding-example.component';
+import { DatabindingPracticeComponent } from './databinding-practice/databinding-practice.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     DatabindingExampleComponent,
-    SafePipe
+    SafePipe,
+    DatabindingPracticeComponent
   ],
   imports: [
     BrowserModule,
