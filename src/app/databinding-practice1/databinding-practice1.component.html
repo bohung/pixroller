@@ -1,40 +1,118 @@
-<span>{{light}}</span>
-hello <span>{{targetPerson['pdfName']}}</span> world <br>
-hello <span>{{targetPerson}}</span> world <br>
-hello <span>{{targetPerson.pdfName}}</span> world 
-<br>
-<span [innerText]="light"></span>
-<br>
-<span [innerHTML]="light"></span>
-<br>
-{{innerHTMLbinding}}
-<!-- <span [innerText]="innerHTMLbinding"></span> -->
-<!-- 你好<span [innerHTML]="innerHTMLbinding"></span> -->
-你好<span [innerHTML]="innerHTMLbinding | safe:'html'"></span>
+<div class="area">
+    <div>
+        ********** databinding請務必練習～～～ **********
+    </div>
 
-<img [src]="imgVar" alt="">
-<br>
+    <br>
 
-簡易陣列databinding
-<div *ngFor="let fruit of fruits">
-    {{fruit}}
-</div>
+    <div>
+        ----簡單的databinding----
+        <div>最簡單的綁法：<span>{{light}}</span></div>
+    </div>
 
-陣列＋物件databinding
-<table>
-    <tr *ngFor="let drug of drugs">
-        <td class="serviceDate">{{drug.F_Service_Dte}}</td>
-        <td>{{drug.F_Drug_Nme}}</td>
-        <td></td>
-    </tr>
-</table>
+    <br>
 
-<span [ngStyle]="appleObj">apple</span>
-<br>
-<span [ngClass]="appleObj2">apple2</span>
+    <div>
+        ----物件的databinding----
+        <div>
+            綁定方式1：hello <span>{{targetPerson['pdfName']}}</span> world <br>
+            綁定方式2：hello <span>{{targetPerson}}</span> world <br>
+            綁定方式3：hello <span>{{targetPerson.pdfName}}</span> world 
+        </div>
+    </div>
+    
+    <br>
 
-<div *ngIf="open">
-    banana
+    <div>
+        <div>----字串的databinding，inner系列版本基礎綁定方式----</div>
+        <div>innerText的綁定：<span [innerText]="light"></span> </div>
+        <div>innerHTML的綁定：<span [innerHTML]="light"></span> </div>
+    </div>
+
+    <br>
+
+    <div>
+        <div>
+            ----字串的databinding，字串含有html標籤的綁法---- <br>
+            PS: innerHTML的特殊功能為，能夠讓變數值中的html標籤起作用
+        </div>
+        <li>這是簡單綁法的結果：{{innerHTMLbinding}}</li>
+        <li>這是innerText綁法的結果：<span [innerText]="innerHTMLbinding"></span></li>
+        <li>這是innerHTML最單純的綁法：上標測試<span [innerHTML]="innerHTMLbinding"></span></li>
+        <li>這是innerHTML最單純的綁法（變數值含有css的正確綁法）：上標測試<span [innerHTML]="innerHTMLbinding | safe:'html'"></span></li>
+    </div>
+
+    <div>
+        <div>
+            ----圖片的databinding----
+        </div>
+        <img [src]="imgVar" alt="">
+    </div>
+    
+    <br>
+    
+    <div>
+        <div>
+            ----簡易陣列的databinding----
+        </div>
+        <div *ngFor="let fruit of fruits">
+            {{fruit}}
+        </div>
+    </div>
+    
+    <div>
+        <div>
+            ----陣列＋物件的databinding----
+        </div>
+        <div *ngFor="let drug of drugs">
+            <span class="serviceDate">{{drug.F_Service_Dte}}</span>
+            hello<sup>{{drug.F_Drug_Nme}}</sup>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            ----table的databinding----
+        </div>
+        <table>
+            <tr *ngFor="let drug of drugs">
+                <td class="serviceDate">{{drug.F_Service_Dte}}</td>
+                <td>{{drug.F_Drug_Nme}}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div>
+        ********** 底下的databinding為額外教學，建議單純了解意思就好，有興趣的人在練習即可，詳請可以去看影片，或有疑問可以私密詢問～～～ **********
+    </div>
+
+    <div>
+        <div>
+            ----ngStyle的databinding----
+        </div>
+        <span [ngStyle]="appleObj">apple</span>
+    </div>
+
+    <br>
+
+    <div>
+        <div>
+            ----ngClass的databinding----
+        </div>
+        <span [ngClass]="appleObj2">apple2</span>
+    </div>
+
+    <div>
+        <div>
+            ----ngIf的databinding----
+        </div>
+        <div *ngIf="open">
+            banana
+        </div>
+    </div>
+
+    
 </div>
 
 <!-- <div *ngFor="let drug of drugs">
