@@ -5,23 +5,23 @@ import { TargetMap } from 'src/app/short/dev-data-source';
 import { DoNotSplitLines } from 'src/app/utility/doNotSplitLines';
 
 @Component({
-  selector: 'app-ltrmpdexleca22000',
-  templateUrl: './ltrmpdexleca22000.component.html',
-  styleUrls: ['./ltrmpdexleca22000.component.css']
+  selector: 'app-eca-practice',
+  templateUrl: './eca-practice.component.html',
+  styleUrls: ['./eca-practice.component.css']
 })
-export class LTRMPDEXLECA22000Component implements OnInit, AfterViewInit {
+export class ECAPracticeComponent implements OnInit, AfterViewInit {
   @Input() targetPerson: any =TargetMap.get("LTR_MPD_EXL_ECA22_1_000")
   @Input() fontSize = '18pt';
 
   //data binding
-  barcodeImageSrc = '';
-  logoImageSrc = '';
+  barcodeImageSrc = ''; //barcode圖片
+  logoImageSrc = ''; //logo圖片
   targetPerson_FullAddress:any={
     L_Mem_FullName: '',
     L_Mem_Addr1: '',
     L_Mem_CityStateZip: '',
   };//收件人個人資訊
-  targetPerson_footer='';//頁尾的變數組合
+  targetPerson_footer='';//頁尾
   newTargetPerson_2_Plan_Name_Format='';//無特殊符號（商標）的字串
   trademark='';//商標
   mainContentFontSize={font12:false,font18:false};//控制main content字體大小
