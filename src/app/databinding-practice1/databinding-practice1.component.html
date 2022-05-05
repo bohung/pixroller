@@ -1,0 +1,43 @@
+<span>{{light}}</span>
+hello <span>{{targetPerson['pdfName']}}</span> world <br>
+hello <span>{{targetPerson}}</span> world <br>
+hello <span>{{targetPerson.pdfName}}</span> world 
+<br>
+<span [innerText]="light"></span>
+<br>
+<span [innerHTML]="light"></span>
+<br>
+{{innerHTMLbinding}}
+<!-- <span [innerText]="innerHTMLbinding"></span> -->
+<!-- 你好<span [innerHTML]="innerHTMLbinding"></span> -->
+你好<span [innerHTML]="innerHTMLbinding | safe:'html'"></span>
+
+<img [src]="imgVar" alt="">
+<br>
+
+簡易陣列databinding
+<div *ngFor="let fruit of fruits">
+    {{fruit}}
+</div>
+
+陣列＋物件databinding
+<table>
+    <tr *ngFor="let drug of drugs">
+        <td class="serviceDate">{{drug.F_Service_Dte}}</td>
+        <td>{{drug.F_Drug_Nme}}</td>
+        <td></td>
+    </tr>
+</table>
+
+<span [ngStyle]="appleObj">apple</span>
+<br>
+<span [ngClass]="appleObj2">apple2</span>
+
+<div *ngIf="open">
+    banana
+</div>
+
+<!-- <div *ngFor="let drug of drugs">
+    <span class="serviceDate">{{drug.F_Service_Dte}}</span>
+    hello<sup>{{drug.F_Drug_Nme}}</sup>
+</div> -->
