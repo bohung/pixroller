@@ -1,0 +1,132 @@
+<div class="pageECA font18">
+  <div class="templeteShortName font12 bold">ECA</div>
+  <div class="underShortName font6">CRP2101_004071.3</div>
+  <div class="timeStamp font8 letter">{{targetPerson_footer}}</div>
+  <!-- <div class="timeStamp font8 letter">{{targetPerson.L_TimeStamp}} - {{targetPerson.L_MCarrier_OpID}}{{targetPerson['2_Primary_Key_Disp']}}</div> -->
+  <div class="letterId font8 letter">{{targetPerson.H_Letter_Id}}</div>
+  <div class="fileName font12 TimesNewRoman">{{targetPerson['XML-PDF_OutputFilename_ESI_FilenameONLY']}}</div>
+  <div class="mailingInformation letter">
+    <div class="sender font12">Express Scripts <br>
+      P.O. Box 66562<br>
+      St. Louis, MO 63166-6562</div>
+      <div class="date font12 letter">{{targetPerson.L_Current_Date}}</div>
+      <div class="adressInfo">
+          <div class="recipietContainer">
+              <div class="randomCode">
+                  {{targetPerson.L_ReturnCode}}<br>
+                  {{targetPerson.L_ReturnCode2}}
+              </div>
+              <div class="recipietInfo">
+                  <div class="QRCodeBar">
+                      <img class="QRCode" [src]="barcodeImageSrc" alt="">
+                  </div>
+                  <div class="recipiet">
+                      <div class="customerNumber font8">{{targetPerson.Address_Codeline}}</div>
+                      <div class="recipiet_row font12 letter">{{targetPerson_FullAddress.L_Mem_FullName}}</div>
+                      <div class="recipiet_row_2 font12 letter">{{targetPerson_FullAddress.L_Mem_Addr1}}</div>
+                      <div class="recipiet_row_3 font12 letter">{{targetPerson_FullAddress.L_Mem_CityStateZip}}</div>
+                  </div>
+              </div>
+          </div>
+          <div class="logo">
+              <img class="logo_size" [src]="logoImageSrc"  alt="">
+          </div>
+      </div>
+  </div>
+  <div class="mail_Content font18" [ngClass]="{'font12':mainContentFontSize.font12, 'font18':mainContentFontSize.font18}">
+      <div class="title">Dear <span class="Mem_FullName" data-FullName-end=":">{{targetPerson.L_Mem_FullName}}</span>: </div>
+      <div class="context">
+          <div class="paragraph">
+              <span [innerHTML]="targetPerson['2_HIPAA'] | safe:'html'"></span> has requested your disenrollment from
+              <span class="bold" [innerHTML]="targetPerson['2_Plan_Name'] | safe:'html'"></span>
+              <span><sup>{{trademark}}</sup>{{newTargetPerson_2_Plan_Name_Format}}</span> because
+              <span [innerHTML]="targetPerson['2_Generic_2_Txt'] | safe:'html'"></span> has
+              chosen a new prescription drug benefit provider and
+              they will be sending you information about this new coverage,
+              including any new coverage options being provided by <span [innerHTML]="targetPerson['2_Generic_2_Txt'] | safe:'html'"></span>,
+              in a separate letter or package.
+          </div>
+          <div class="paragraph">
+              Your disenrollment from
+              <span [innerHTML]="targetPerson['2_Plan_Name2'] | safe:'html'"></span>
+              will be effective
+              <span>{{targetPerson.L_Disenrollment_Dt_Plus_One}}</span>.
+              As of
+              <span>{{targetPerson.L_Disenrollment_Dt_Plus_One}}</span>,
+              <span [innerHTML]="targetPerson['2_Plan_Name2'] | safe:'html'"></span>
+              will not cover your prescription drugs.
+
+          </div>
+          <div class="paragraph bold">
+              This letter applies only to your
+              <span [innerHTML]="targetPerson['2_Plan_Name2'] | safe:'html'"></span>
+              prescription drug benefits.
+              <div>
+                <span [innerHTML]="targetPerson['2_Plan_Name2'] | safe:'html'"></span>
+                made this decision. Contact your group benefits
+                administrator if you have any questions or for more
+                information.
+              </div>
+          </div>
+          <div class="paragraph">
+              Please remember, if you do not have or get other coverage
+              that is at least as good as Medicare drug coverage (also
+              referred to as “creditable coverage”) within 63 days of
+              your disenrollment from
+              <span [innerHTML]="targetPerson['2_Plan_Name2'] | safe:'html'"></span>,
+              you may have to pay a late enrollment penalty if you
+              enroll in Medicare prescription drug coverage in the future.
+          </div>
+
+          <div class="paragraph title bold widow">Medicare enrollment/disenrollment guidelines</div>
+          <div>
+              Generally, you can only enroll in and disenroll from a Medicare
+              prescription drug plan between October 15 and
+              December 7 of each year. However, Medicare allows for special
+              exception periods under certain circumstances. Because your
+              coverage from your former employer or retiree group is ending
+              effective
+              <span>{{targetPerson.L_Disenrollment_Dt_Plus_One}},</span>
+              you may be eligible to enroll in an individual Medicare
+              prescription drug plan not sponsored by
+              <span [innerHTML]="targetPerson['2_Generic_3_Txt'] | safe:'html'"></span>.
+              You will have a Special Enrollment Period (lasting up to 2
+              months from when your coverage with
+              <span [innerHTML]="targetPerson['2_Generic_2_Txt'] | safe:'html'"></span>
+              ends) during which you can enroll in another Medicare prescription
+              drug plan. You can contact a new plan directly for more
+              information on your plan options, coverage and corresponding
+              costs.
+
+          </div>
+          <div class="paragraph title bold widow">What is Extra Help?</div>
+          <div>
+              People with limited incomes may qualify for Extra Help to
+              pay for their prescription drug costs. If you qualify, Medicare
+              could pay for up to seventy-five (75) percent or more of your
+              drug costs, including monthly prescription drug premiums, annual
+              deductibles and coinsurance. Additionally, those who qualify will
+              not be subject to a late enrollment penalty. Many people are
+              eligible for these savings and do not even know it. For more
+              information about this Extra Help, contact your local Social
+              Security office or call
+              <span>{{targetPerson['2_Generic_4_Txt']}}</span>,
+              24 hours per day, 7 days per week. TTY users should call
+              <span class="keyword">{{targetPerson['2_Generic_5_Txt']}}</span>.
+
+          </div>
+          <div class="paragraph">If you think there has been a mistake, or if you have any questions, please contact your group benefits administrator.
+          </div>
+          <div class="paragraph">Thank you.</div>
+      </div>
+      <div class="atencion">
+          ATENCIÓN: si habla español, tiene a su disposición
+          servicios gratuitos de asistencia lingüística. Llame
+          al
+          <span class="bold">{{targetPerson['2_EPM_CallCenter_Phys_Phone']}}</span>
+          <span class=" keyword"> (TTY: <span class="bold">{{targetPerson['2_EPM_Phys_TTY']}}</span>).</span>
+      </div>
+  </div>
+  <span class="page_break"></span>
+</div>
+
