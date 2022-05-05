@@ -1,1 +1,419 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import url(//db.onlinewebfonts.com/c/d175500f64f832c70d093e9468a8cdbe?family=Bodoni+Book+SSi); */
+
+/* @font-face {
+  font-family: "Times New Roman Italic";
+  src: url("./assets/Times New Roman Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Times New Roman Bold";
+  src: url("./assets/Times New Roman Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("./assets/Times New Roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Adobe Garamond";
+  src:url("./assets/EBGaramond-Regular.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: "Adobe Garamond Bold";
+  src:url("./assets/EBGaramond-Medium.ttf") format("trueType"); */
+/* } */
+/* page break 分頁小精靈 */
+/* 強制分頁小精靈 */
+.page_break {
+  break-after: page;
+  display: none;
+}
+/* 特殊資訊避免被分頁切到小精靈 */
+.avoid_break {
+  break-inside: avoid;
+}
+/* =============== */
+
+/*字型selector */
+.font6 {
+  font-size: 12pt;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.5);
+}
+
+.font7 {
+  font-size: 14pt;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.5);
+}
+
+.font8 {
+  font-size: 16pt;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.5);
+  /* margin-top: -0.3cm; */
+}
+
+.font9 {
+  font-size: 18pt;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.5);
+}
+
+.font10 {
+  font-size: 20pt;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.5);
+}
+
+.font12 {
+  font-size: 12pt;
+}
+
+.font16 {
+  font-size: 16pt;
+}
+
+.font18 {
+  font-size: 18pt;
+}
+
+/* 上標 */
+sup {
+  font-size: 10pt;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.5);
+  line-height: 10.5pt;
+}
+
+.sender_sup{
+  font-size: 16px;
+  vertical-align: top;
+  line-height: 0;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.5);
+  display: inline-table;
+  padding-top: 0.14cm;
+  margin-right: -0.25cm;
+}
+
+/* 字型 */
+/* sender等字型 */
+.letter {
+  font-family: "Adobe Garamond", serif;
+}
+
+.letterBold{
+  font-family: 'Adobe Garamond Bold';
+}
+
+.TimesNewRoman{
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* 內文斜體 */
+.ltalic {
+  font-family: "TimesNewRomanPS-ItalicMT", "Times New Roman Italic";
+}
+
+/*我不知道，反正就也是斜體 */
+.ltalic-mail-content{
+  font-style: italic;
+}
+
+/* 內文粗體 */
+/* .bold {
+  font-family: "Times New Roman Bold";
+} */
+/* 練習用 */
+.bold {
+    font-weight:bold;
+  }
+
+/* tabley字體 */
+.arialBold {
+  font: bold 1em Arial;
+}
+
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left {
+  text-align: left;
+}
+/* 不換行 */
+.keyword {
+  white-space: nowrap;
+}
+/* 內文換行 */
+.newLine {
+  white-space: pre-line;
+}
+
+.center{
+  text-align: center;
+}
+
+/* 首行突排 */
+.notePS{
+  text-indent: -0.7em;
+  margin-left: 0.7em;
+}
+
+/* 塊級元素 */
+
+.block{
+  display: block;
+}
+
+/* underline */
+
+.underline{
+  text-decoration: underline;
+  text-decoration-skip-ink:none;
+  text-decoration-thickness: 1px;
+}
+
+/* 列表清單ＣＳＳ */
+
+.list{
+  padding-left:1.8cm ;
+  margin-top: -0.14cm;
+}
+
+.listRow{
+  padding-left: 0pt;
+  margin-top: 0.14cm;
+  /* margin-bottom: 0.13cm; */
+}
+
+.listRow_2{
+  margin-bottom: 0.2cm;
+}
+
+.listContext{
+  margin-left: 20pt;
+}
+
+
+/* 信件通用樣式（如有同命名不同樣式請在各自的樣板css做變動） */
+body {
+  background-color: rgb(98, 98, 98);
+}
+
+.adressInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -0.75cm;
+  margin-top: 0.42cm;
+}
+
+.atencion {
+  margin-top: 1.3cm;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.border{
+  border: 1px solid black;
+}
+
+.customerNumber{
+  margin-top: 0.2cm;
+}
+
+.context-inline{
+  display: inline-block;
+  line-height: 25pt;
+}
+
+.recipietContainer {
+  width: 53%;
+}
+
+.mailingInformation {
+  margin-bottom: 0.5cm;
+}
+
+.mail_Content {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 20pt;
+}
+
+.sender {
+  line-height: 4.5mm;
+  height: 1.35cm;
+  margin-bottom: 0.81cm;
+}
+
+.date {
+  text-align: right;
+  margin-top: 0.7cm;
+  padding-right: 0.1cm;
+  height: 0.35cm;
+}
+
+.logo {
+  right: 0;
+  width: 40%;
+}
+
+.recipietInfo {
+  display: flex;
+  margin-top: 0.024cm;
+}
+
+.QRCodeBar {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.QRCode {
+  width: 0.61cm;
+  height: 0.61cm;
+  /* padding-top: 0.2cm; */
+  position: relative;
+  margin-left: 0.10cm;
+  margin-top: -0.2cm;
+}
+
+.randomCode {
+  font-size: 16pt;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.5);
+  height: 0.5cm;
+  letter-spacing: -0.5px;
+  margin-left: 0.2cm;
+  white-space: nowrap;
+}
+
+.recipiet {
+  padding-left: 0.13cm;
+  /* height: 2.83cm; */
+}
+
+/* .recipiet .customerNumber {
+  margin-bottom: 0.024cm;
+} */
+
+
+
+.paragraph {
+  margin-top: 0.5cm;
+}
+
+
+.recipiet_row{
+  line-height: 12pt;
+  margin-top: -0.1cm;
+}
+
+.test {
+  position: absolute;
+  left: 0.8cm;
+  text-align: left;
+  z-index: 1;
+  top: 25cm;
+}
+
+.end_par{
+  margin-top: 1.45cm;
+}
+
+.For_Standard_Requests{
+  display: flex;
+}
+
+.planOPT{
+  text-align: right;
+  margin-bottom: 0.5cm;
+}
+
+
+/* new style */
+  .mailTitle{
+    text-align: center;
+    margin-bottom: 0.52cm;
+    text-transform:uppercase;
+    letter-spacing: -0.018cm;
+  }
+
+  .fileName{
+    z-index: 100;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: -1.55cm;
+    text-align: left;
+    width: 100%;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .logoTitle{
+    text-align: right;
+    width: 10.35cm;
+    letter-spacing: -0.018cm;
+    line-height: 24pt;
+    margin-top: -0.4cm;
+  }
+
+  .customerID{
+    text-align: right;
+    margin-bottom: 0.44cm;
+  }
+
+  .infoForTable{
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .tableTitleRow{
+    height: 2.15cm;
+  }
+
+  .contextRow{
+    padding-top: 0.84cm;
+  }
+
+  .titleRow{
+    background-color: #d8d9d7;
+    -webkit-print-color-adjust: exact;
+    padding-left: 0.2cm;
+    padding-right: 0.2cm;
+  }
+
+  .hideListStyle{
+    list-style-type:none;
+  }
+
+  .tableBorder{
+    border-right: 0.95cm solid #fff;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .tableContextrow_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .LTRlist{
+    padding-inline-start: 1cm;
+  }
+
+
+  .RxTableTBody{
+    hyphens: auto;
+    -webkit-hyphens:auto;
+  }
+  /* 簽名檔 */
+  .signature_size{
+    width: 5.08cm;
+    height: 1.02cm;
+    margin-left: 0.12cm;
+    margin-top: -0.1cm;
+  }
+  /* mailinfomation:height:8.04cm */
+  /* mail_Content:margin-top:0cm */
