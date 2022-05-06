@@ -1,6 +1,6 @@
 <span>{{light}}</span>
 <span>{{number}}</span>
-Hello <span>{{targetPerson.pdfName}}</span> world
+Hello <span>{{targetPerson ['2pdfName']}}</span> world
 <br>
 <span [innerText]="light"></span>
 <br>
@@ -13,3 +13,13 @@ Hello <span>{{targetPerson.pdfName}}</span> world
 哩賀 <span [innerHTML]="innerHTMLbinding"></span>
 <!-- 目前的綁法如下 -->
 哩賀 <span [innerHTML]="innerHTMLbinding | safe:'html'"></span>
+<br>
+<img [src]="imgVar" alt="">
+<!-- =跟後面的""要連在一起，分開的話讀取上會有問題 -->
+<br>
+<div *ngFor="let room of rooms">
+    {{room}}
+</div>
+<div *ngFor="let key of doors">
+    {{key}}
+</div>
