@@ -18,6 +18,17 @@ export class DatabindingPracticeComponent implements OnInit {
   rooms=['a','b','c']
   doors=['1','2','3']
 
+  apple='green'
+  appleObj={
+    'color':this.apple === 'green' ? 'green' : 'red'
+  }
+  appleObj2={
+    'applegreen' : this.apple === 'green',
+    'applered' : this.apple === 'red'
+  }
+
+  open = true
+
   drugs = [
     {
       "F_Service_Dte": '12/05/2021',

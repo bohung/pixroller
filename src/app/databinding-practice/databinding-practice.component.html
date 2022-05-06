@@ -1,25 +1,39 @@
-<span>{{light}}</span>
+<!-- <span>{{light}}</span>
 <span>{{number}}</span>
 Hello <span>{{targetPerson ['2pdfName']}}</span> world
 <br>
 <span [innerText]="light"></span>
 <br>
 <span [innerHTML]="light"></span>
-<br>
+<br> -->
 <!-- 文字打甚麼就會出現甚麼 -->
 <!-- {{innerHTMLbinding}} -->
 <!-- <span [innerText]="innerHTMLbinding"></span> -->
 <!-- 只會讀取HTML的標籤，但不會讀取CSS -->
-哩賀 <span [innerHTML]="innerHTMLbinding"></span>
+<!-- 哩賀 <span [innerHTML]="innerHTMLbinding"></span> -->
 <!-- 目前的綁法如下 -->
-哩賀 <span [innerHTML]="innerHTMLbinding | safe:'html'"></span>
+<!-- 哩賀 <span [innerHTML]="innerHTMLbinding | safe:'html'"></span>
 <br>
-<img [src]="imgVar" alt="">
+<img [src]="imgVar" alt=""> -->
 <!-- =跟後面的""要連在一起，分開的話讀取上會有問題 -->
-<br>
+<!-- <br>
 <div *ngFor="let room of rooms">
     {{room}}
 </div>
 <div *ngFor="let key of doors">
     {{key}}
+</div>
+<div *ngFor="let drug of drugs">
+    {{drug.F_Service_Dte}}
+    {{drug.F_Rx_Nbr}}
+    {{drug.F_Drug_Nme}}
+</div> -->
+<br>
+<span [ngStyle]="{'color': apple === 'green' ? 'green' : 'red'}">apple</span>
+<br>
+<span [ngStyle]="appleObj">apple</span>
+<br>
+<span [ngClass]="appleObj2">apple2</span>
+<div  *ngIf="open">
+   banana
 </div>
