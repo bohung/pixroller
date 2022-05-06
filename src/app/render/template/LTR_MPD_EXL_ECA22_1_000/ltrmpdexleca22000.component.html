@@ -38,7 +38,7 @@
           <div class="paragraph">
               <span [innerHTML]="targetPerson['2_HIPAA'] | safe:'html'"></span> has requested your disenrollment from
               <span class="bold" [innerHTML]="targetPerson['2_Plan_Name'] | safe:'html'"></span>
-              <span><sup>{{trademark}}</sup>{{newTargetPerson_2_Plan_Name_Format}}</span> because
+              <span><sup>{{trademark}}</sup><span [innerHTML]="newTargetPerson_2_Plan_Name_Format | safe:'html'"></span></span> because
               <span [innerHTML]="targetPerson['2_Generic_2_Txt'] | safe:'html'"></span> has
               chosen a new prescription drug benefit provider and
               they will be sending you information about this new coverage,
