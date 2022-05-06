@@ -36,3 +36,27 @@
 <span [innerHTML]="innerHTMLbinding | safe:'html'"></span> -->
 
 <!-- ngFor & ngIf -->
+
+<img [src]="imgMH" alt="">
+
+<br>
+
+<div *ngFor="let drug of drugs">
+    {{drug.F_Service_Dte}}
+    {{drug.F_Rx_Nbr}}
+    {{drug.F_Drug_Nme}}
+    {{drug.F_Net_Check_Diff_Amt}}
+    {{drug.F_Explanation_Codes_Txt}}
+</div>
+
+<span [ngStyle]="{'color':apple === 'green' ? 'green' : 'red'}">
+    蘋果
+</span>
+<br>
+<span [ngStyle]="roseObj">
+    玫瑰
+</span>
+<br>
+<span [ngClass]="goObj">
+    圍棋
+</span>

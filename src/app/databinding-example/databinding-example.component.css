@@ -1,3 +1,11 @@
 .bold {
     font-weight:bold;
 }
+
+.goBlack {
+    color: black;
+}
+
+.goWhite {
+    color: white;
+}
