@@ -126,6 +126,29 @@
           <span class=" keyword"> (TTY: <span class="bold">{{targetPerson['2_EPM_Phys_TTY']}}</span>).</span>
       </div>
   </div>
+  ****** 下表為藥單簡化版的databinding練習 ****** 
+  <div class="paragraph center">
+    <table class="FinancialRxTable">
+      <thead>
+        <tr class="RxTableTHeadTR">
+          <td class="RxTableTHead THead1"><div class="vertical-rl arialBold">Date of Service</div></td>
+          <td class="RxTableTHead THead2"><div class="vertical-rl arialBold">Rx Number</div></td>
+          <td class="RxTableTHead THead3"><div class="vertical-rl arialBold">Drug Name</div></td>
+          <td class="RxTableTHead THead4"><div class="vertical-rl arialBold">Patient<br>responsibility<br>change</div></td>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let drugInfo of drugList">
+          <tr>
+            <td class="RxTableTBody arial left">{{drugInfo.F_Service_Dte}}</td>
+            <td class="RxTableTBody arial left">{{drugInfo.F_Rx_Nbr}}</td>
+            <td class="RxTableTBody arial left">{{drugInfo.F_Drug_Nme}}</td>
+            <td class="RxTableTBody arial left">${{drugInfo.F_Net_Check_Diff_Amt}}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
   <span class="page_break"></span>
 </div>
 

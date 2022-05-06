@@ -15,7 +15,7 @@
                 </div>
                 <div class="recipietInfo">
                     <div class="QRCodeBar">
-                        <img class="QRCode" [src]="" alt="">
+                        <img class="QRCode" [src]="loseImg" alt="">
                     </div>
                     <div class="recipiet">
                         <div class="customerNumber font8"></div>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="logo">
-                <img class="logo_size" [src]=""  alt="">
+                <img class="logo_size" [src]="loseImg"  alt="">
             </div>
         </div>
     </div>
@@ -124,6 +124,30 @@
             <span class=" keyword"> (TTY: <span class="bold"></span>).</span>
         </div>
     </div>
+
+    ****** 下表為藥單收斂版的databinding練習 ****** 
+    <div class="paragraph center">
+        <table class="FinancialRxTable">
+          <thead>
+            <tr class="RxTableTHeadTR">
+              <td class="RxTableTHead THead1"><div class="vertical-rl arialBold">Date of Service</div></td>
+              <td class="RxTableTHead THead2"><div class="vertical-rl arialBold">Rx Number</div></td>
+              <td class="RxTableTHead THead3"><div class="vertical-rl arialBold">Drug Name</div></td>
+              <td class="RxTableTHead THead4"><div class="vertical-rl arialBold">Patient<br>responsibility<br>change</div></td>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container>
+              <tr>
+                <td class="RxTableTBody arial left"></td>
+                <td class="RxTableTBody arial left"></td>
+                <td class="RxTableTBody arial left"></td>
+                <td class="RxTableTBody arial left"></td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
     <span class="page_break"></span>
   </div>
   

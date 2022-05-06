@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import bwipjs from 'bwip-js';
-import { TargetMap } from 'src/app/short/dev-data-source';
+import { TargetMap } from 'src/app/dev/dev-data-source';
 import { DoNotSplitLines } from 'src/app/utility/doNotSplitLines';
 
 @Component({
@@ -26,6 +26,11 @@ export class ECAPracticeComponent implements OnInit, AfterViewInit {
   trademark='';//商標
   mainContentFontSize={font12:false,font18:false};//控制main content字體大小
 
+  //陣列的binding練習，藥單
+  drugList = this.targetPerson.M0
+
+  //這個變數不用理，只是為了讓page.js不會因為圖片而卡住
+  loseImg = '../assets/monkey_work.png'
   constructor(private sanitizer: DomSanitizer) { 
     if(!document.getElementById('paged-polyfill')){
       this.loadPagedJsPolyfill(); // 和rendering有關勿動
