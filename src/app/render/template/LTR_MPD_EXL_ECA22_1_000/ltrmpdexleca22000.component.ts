@@ -1,7 +1,9 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import bwipjs from 'bwip-js';
-import { TargetMap } from 'src/app/short/dev-data-source';
+import { Observable, from } from 'rxjs';
+import { map, reduce, mergeMap, distinct } from 'rxjs/operators';
+import { TargetMap } from 'src/app/dev/dev-data-source';
 import { DoNotSplitLines } from 'src/app/utility/doNotSplitLines';
 
 @Component({
@@ -9,6 +11,7 @@ import { DoNotSplitLines } from 'src/app/utility/doNotSplitLines';
   templateUrl: './ltrmpdexleca22000.component.html',
   styleUrls: ['./ltrmpdexleca22000.component.css']
 })
+
 export class LTRMPDEXLECA22000Component implements OnInit, AfterViewInit {
   @Input() targetPerson: any =TargetMap.get("LTR_MPD_EXL_ECA22_1_000")
   @Input() fontSize = '18pt';
@@ -25,6 +28,9 @@ export class LTRMPDEXLECA22000Component implements OnInit, AfterViewInit {
   newTargetPerson_2_Plan_Name_Format='';//無特殊符號（商標）的字串
   trademark='';//商標
   mainContentFontSize={font12:false,font18:false};//控制main content字體大小
+
+  //陣列的binding練習
+  drugList = this.targetPerson.M0
 
   constructor(private sanitizer: DomSanitizer) { 
     if(!document.getElementById('paged-polyfill')){
@@ -58,7 +64,6 @@ export class LTRMPDEXLECA22000Component implements OnInit, AfterViewInit {
         this.targetPerson[key] = new DoNotSplitLines(this.targetPerson[key]).setAllNoSplitLineRule().buildResultString();
       }
     });
-
   }
 
   ngAfterViewInit(): void {
