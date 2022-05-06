@@ -1,3 +1,15 @@
 .bold {
     font-weight:bold;
 }
+
+.tab {
+    margin-right: 2cm;
+}
+
+.appleGreen {
+    color: green;
+}
+
+.appleRed {
+    color: red
+}

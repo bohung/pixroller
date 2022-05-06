@@ -29,6 +29,28 @@
     </div>
 </div>
 
+<span>{{try}}</span>
+<br>
+hello <span>{{targetPerson.name}}</span> page
+<br>
+<span [innerText]="try"></span>
+<br>
+<img [src]="imgVar" alt="">
+<img src="../../assets/LOG_8446_2020_1_000.png">
+
+<div *ngFor="let room of rooms">
+ {{room}}
+</div>
+
+<div *ngFor="let drug of drugs">
+    <span class="tab"> {{drug.F_Service_Dte}}</span>
+    {{drug.F_Rx_Nbr}}
+    {{drug.F_Drug_Nme}}
+    {{drug.F_Net_Check_Diff_Amt}}
+    {{drug.F_Explanation_Codes_Txt}}
+</div>
+
+<span [ngStyle]="{'color':apple === 'green' ? 'green' : 'red'}">apple</span> 
 
 <!-- innerHTML綁定說明 -->
 <!-- {{innerHTMLbinding}}
