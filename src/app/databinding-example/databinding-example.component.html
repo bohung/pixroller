@@ -36,3 +36,69 @@
 <span [innerHTML]="innerHTMLbinding | safe:'html'"></span> -->
 
 <!-- ngFor & ngIf -->
+<div>
+    <h1>歌詞:{{music}}</h1>
+    <br>
+    <span [innerText] = "music"></span>
+    <!-- 和上面{{}}的呈現一樣 所以平常不會用，只會用{{}}-->
+    <br>
+    超級<span [innerHTML] = "lala"></span>
+    <br>    
+    <!-- 但這樣抓不到css，只能抓到html的標籤-->
+    超超級<span [innerHTML] = "lala | safe:'html'"></span>
+    <!-- 加上 | safe:'html' 才能抓到css -->
+    <!-- safe:'html'其實是一種外掛寫法，不是angular原生的，但太困難了不需要理解-->
+   <!--p.s 雙引號""和單引號''其實沒有差別，如果兩個同時出現(如上)就要用雙引號包單引號。-->
+    <br>
+    <h1>介紹:{{name.jay}}</h1>    
+    物件(非數字、文字)的綁定方式，需要.區隔後面變數-->
+
+</div>
+
+<!--0504的課程-->
+<!--[src]-->
+<!--    <img class="sender_size" [src]="senderImageSrc" alt=""> 在ESI中-->
+   <!-- 之前senderImageSrc的部分是直接放路徑連結資料夾內的圖片，
+        現在則是放變數名稱，連結到ts中的變數值。
+        把logo圖片放在assets資料夾中。
+        p.s assets是用來放外部資料用的。-->
+<img src="../../assets/5.PNG" alt="">
+    <!--這個是原本放路徑圖片的形式~~-->
+<img [src]="logoVar" alt="">
+    <!--這個是把路徑當作是種變數值，在ts中放好變數值，取好變數名稱，放入原本放路徑的地方，
+        要讀到ts的東西，一定要加上[]或是{}-->
+
+
+<!--ngFor-->
+<!--ngFor使用在陣列上-->
+<br>
+{{hellos}} 
+<!--這是錯誤的方式，會把,顯示出來，而且都是一整列無法分段-->
+
+<br>
+<div *ngFor="let hello of hellos">
+    {{hello}} 
+</div>
+<!--hello是自定義，後面的自定義要加S-->
+
+<br>
+<div *ngFor="let fruit of fruits">
+    {{fruit.fruitname}} 
+    {{fruit.color}}
+    {{fruit.look}}  
+</div>
+<!--陣列+物件，用.區分變數名稱
+  另外，ngFor會複製前面的div，有幾列就會有幾個div。(打span就會複製span  -->
+
+<br>
+<!--雖然上方看起來有排列好，但其實他不是表格，只是一列一列呈現，真正表格要用標籤做-->
+<table>
+    <tr *ngFor="let fruit of fruits">
+        <td>{{fruit.fruitname}}</td>
+        <td>{{fruit.color}}</td>
+        <td>{{fruit.look}}</td>
+    </tr>
+</table>
+
+<!--[ngStyle]、[ngClass]、[ngif]是屬於條件式的寫法。
+    [ngStyle]是內聯式，[ngClass]是外聯式-->
