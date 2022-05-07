@@ -18,7 +18,7 @@ import { ECAPracticeComponent } from './render/template/eca-practice/eca-practic
     AppComponent,
     DatabindingExampleComponent,
     SafePipe,
-    DatabindingPracticeComponent
+    DatabindingPracticeComponent,
 
     DatabindingPractice1Component,
     LTRMPDEXLECA22000Component,
