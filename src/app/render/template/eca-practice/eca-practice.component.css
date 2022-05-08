@@ -21,7 +21,7 @@
     margin-bottom: 2.11cm;
     font-family: "Adobe Garamond", serif;;
     @bottom-left{
-      content: string(timeStampECA);
+      content: string(timeStampECAPractice);
       marign-top: 1.5cm;
       margin-bottom: -0.7cm;
       margin-left: -0.1cm;
@@ -32,7 +32,7 @@
   };
   
   @bottom-right{
-    content: string(rtfNameECA);
+    content: string(rtfNameECAPractice);
     marign-top: 1.5cm;
     margin-bottom: -0.7cm;
     margin-right: -7.9cm;
@@ -64,7 +64,7 @@
     -webkit-print-color-adjust:exact;
   }
   .timeStamp{
-    string-set:timeStampECA content(text);
+    string-set:timeStampECAPractice content(text);
     position: absolute;
     left: -0.1cm;
     text-align: left;
@@ -72,7 +72,7 @@
     top: 25.5cm;
   }
   .letterId{
-    string-set:rtfNameECA content(text);
+    string-set:rtfNameECAPractice content(text);
     position: absolute;
     left: 13.7cm;
     text-align: left;
