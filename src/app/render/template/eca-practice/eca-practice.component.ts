@@ -102,4 +102,6 @@ export class ECAPracticeComponent implements OnInit, AfterViewInit {
     }
   }
 
+  imgVar='../../../../assets/LOG_6656_EM2019_1_000.png'
+
 }
