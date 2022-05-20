@@ -11,6 +11,7 @@ import { DatabindingPractice1Component } from './databinding-practice1/databindi
 import { LTRMPDEXLECA22000Component } from './render/template/LTR_MPD_EXL_ECA22_1_000/ltrmpdexleca22000.component';
 import { RenderComponent } from './render/render.component';
 import { ECAPracticeComponent } from './render/template/eca-practice/eca-practice.component';
+import { Test0517Component } from './test0517/test0517.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ECAPracticeComponent } from './render/template/eca-practice/eca-practic
     LTRMPDEXLECA22000Component,
     RenderComponent,
     ECAPracticeComponent,
+    Test0517Component,
   ],
   imports: [
     BrowserModule,
