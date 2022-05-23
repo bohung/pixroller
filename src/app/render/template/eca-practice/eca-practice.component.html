@@ -39,7 +39,7 @@
             <div class="paragraph">
                 <span [innerHTML]="targetPerson['2_HIPAA']"></span> has requested your disenrollment from
                 <span class="bold" [innerHTML]="targetPerson['2_Plan_Name']"></span>
-                <span [innerHTML]="targetPerson['2_Plan_Name_Format']"></span> because
+                <span><sup>{{trademark}}</sup><span [innerHTML]="newTargetPerson_2_Plan_Name_Format |safe:'html'"></span></span> because
                 <span [innerHTML]="targetPerson['2_Generic_2_Txt']"></span> has
                 chosen a new prescription drug benefit provider and
                 they will be sending you information about this new coverage,
@@ -140,12 +140,12 @@
             </tr>
           </thead>
           <tbody>
-            <ng-container>
+            <ng-container *ngFor = "let drug of drugs">
               <tr>
-                <td class="RxTableTBody arial left"></td>
-                <td class="RxTableTBody arial left"></td>
-                <td class="RxTableTBody arial left"></td>
-                <td class="RxTableTBody arial left"></td>
+                <td class="RxTableTBody arial left">{{drug.F_Service_Dte}}</td>
+                <td class="RxTableTBody arial left">{{drug.F_Rx_Nbr}}</td>
+                <td class="RxTableTBody arial left">{{drug.F_Drug_Nme}}</td>
+                <td class="RxTableTBody arial left">{{drug.F_Net_Check_Diff_Amt}}</td>
               </tr>
             </ng-container>
           </tbody>

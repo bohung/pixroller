@@ -102,4 +102,52 @@ export class ECAPracticeComponent implements OnInit, AfterViewInit {
     }
   }
 
+  drugs = [
+    {
+      "F_Service_Dte": '12/05/2021',
+      "F_Rx_Nbr": "000007527071",
+      "F_Drug_Nme": 'LOSARTAN POTASSIUM',
+      "F_Net_Check_Diff_Amt": '-6.43',
+    }, {
+      "F_Service_Dte": "12/05/2021",
+      "F_Rx_Nbr": "000007542128",
+      "F_Drug_Nme": "METOPROLOL SUCCINATE",
+      "F_Net_Check_Diff_Amt": "-2.59",
+    }, {
+      "F_Service_Dte": "12/06/2021",
+      "F_Rx_Nbr": "000002919769",
+      "F_Drug_Nme": "GABAPENTIN",
+      "F_Net_Check_Diff_Amt": "$-5.14",
+    }, {
+      "F_Service_Dte": "12/11/2021",
+      "F_Rx_Nbr": "000003348453",
+      "F_Drug_Nme": "OMEPRAZOLE",
+      "F_Net_Check_Diff_Amt": "$-1.62",
+    }, {
+      "F_Service_Dte": "12/11/2021",
+      "F_Rx_Nbr": "000003348463",
+      "F_Drug_Nme": "ATORVASTATIN CALCIUM",
+      "F_Net_Check_Diff_Amt": "$-2.31",
+    }, {
+      "F_Service_Dte": "12/11/2021",
+      "F_Rx_Nbr": "000003348464",
+      "F_Drug_Nme": "DOXAZOSIN MESYLATE",
+      "F_Net_Check_Diff_Amt": "$-4.29",
+    }, {
+      "F_Service_Dte": "12/13/2021",
+      "F_Rx_Nbr": "000001119304",
+      "F_Drug_Nme": "ELIQUIS",
+      "F_Net_Check_Diff_Amt": "$9.39",
+    }, {
+      "F_Service_Dte": "12/13/2021",
+      "F_Rx_Nbr": "000001119304",
+      "F_Drug_Nme": "ELIQUIS",
+      "F_Net_Check_Diff_Amt": "-$9.39",
+    }, {
+      "F_Service_Dte": "00/00/0000",
+      "F_Rx_Nbr": "000000000000",
+      "F_Drug_Nme": "Test",
+      "F_Net_Check_Diff_Amt": "$0.00",
+    }
+  ]
 }
