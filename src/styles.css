@@ -417,3 +417,31 @@ body {
   }
   /* mailinfomation:height:8.04cm */
   /* mail_Content:margin-top:0cm */
+
+
+  @font-face {
+    font-family: 'Bodoni 72 OS';
+    src: url("./assets/Bodoni 72 OS.ttc") format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Bodoni 72';
+    src: url('./assets/Bodoni 72.ttc') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Bodoni 72 Smallcaps Book';
+    src: url('./assets/Bodoni 72 Smallcaps Book.ttf') format('truetype');
+  }
+  
+  .Bodoni_72_OS{
+    font-family: 'Bodoni 72 OS' 'serif';
+  }
+
+  .Bodoni_72{
+    font-family: 'Bodoni 72' 'serif';
+  }
+
+  .Bodoni_72_Smallcaps_Book{
+    font-family: 'Bodoni 72 Smallcaps Book' 'serif' 'Bold';
+  }

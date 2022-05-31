@@ -1,0 +1,56 @@
+<div class="page">
+    <div class="icon">
+        <img class="icon" [src]="iconimg" alt="error">
+    </div>
+    <div class="Logo">Dorrit Studio</div>
+    <div class="line1"></div>
+    <div class="content">Lorem ipsum dolor sit amet, consectetur elit.<br>
+        Aenean hendrerit leo a est laoreet, id rhoncus.<br>
+        Vivamus vel nunc vitae risus consectetur efficitur.<br>
+        Donec malesuada metus at nibh finibus,<br>
+        eget feugiat ex posuere.        
+        </div>
+    <div class="line_top"></div>
+    <table class="T_logo">
+        <tr>
+            <td><img class="logo_size" [src]="logoimg" alt="error"></td>
+            <td><img class="cati_size" [src]="catiimg" alt="error"></td>
+            <td><img class="pebb_size" [src]="pebbimg" alt="error"></td>
+        </tr>
+    </table>
+    <div class="line_top"></div>
+    <div class="LOREM">Lorem</div>
+    
+        <table class="Table">
+            <thead>
+                <tr class="THead">
+                  <td class="H_Name"><div>NAME</div></td>
+                  <td class="H_Age"><div>AGE</div></td>
+                  <td class="H_ID"><div>ID</div></td>
+                  <td class="H_Note"><div>NOTE</div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor = "let Name of Names">
+                  <tr>
+                    <td class="Name">{{Name.F_Name}}</td>
+                    <td class="Age">{{Name.F_Age}}</td>
+                    <td class="ID">{{Name.F_ID}}</td>
+                    <td class="Note">{{Name.F_Note}}</td>
+                  </tr>
+                </ng-container>
+            </tbody>
+            </table>
+          <table class="Table2">
+              <tr>
+                <td class="T1">1</td>
+                <td class="T2">2</td>
+              </tr>
+              <tr>
+                <td class="T3">3</td>
+                <td>4</td>
+              </tr>
+          </table>
+        <!-- <div class="line_top"></div> -->
+        <div class="footer">Dorrit Studio</div>
+</div>
