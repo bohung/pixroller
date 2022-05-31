@@ -1,0 +1,62 @@
+
+<!-- <div class="page"></div> -->
+<!-- 第二步：裝載著css寫的 @page屬性們 -->
+<div class="page">
+<div><img class="toplogo" src="../../assets/icon-thumbnail_3拷貝.png"  alt=""></div>
+<p class="H1_Format">Dorrit Studio</p>
+<br>
+<hr>
+<div class="P_Format">
+<P>Lorem ipsum dolor sit amet, consectetur elit.</P>
+<P>Aenean hendrerit leo a est laoreet, id rhoncus.</P>
+<P>Vivamus vel nunc vitae risus consectetur efficitur.</P>
+<P>Donec malesuada metus at nibh finibus,</P>
+<P>eget feugiat ex posuere.</P>
+</div>
+<hr> <!-- hr是分隔線標籤 -->
+<div class="logos">
+<span><img class="logo_size" src="../../assets/Logo_TV_2015.png" alt=""></span>
+<span class="logoline"></span>
+<span><img class="logo_size" src="../../assets/Simple-clean-logo-for-Interior-Design-Company-1365041.png" alt=""></span>
+<span class="logoline"></span>
+<span><img class="logo_size" src="../../assets/svl5ykb5fd5qiusazsse.png" alt=""></span>
+</div>
+
+<!-- <table>
+    <tr>
+        <td class="logocell"><span><img class="logo_size logocell_height" src="../../assets/Logo_TV_2015.png" alt=""></span></td>
+        <td class="logocell"><span><img class="logo_size logocell_height" src="../../assets/Simple-clean-logo-for-Interior-Design-Company-1365041.png" alt=""></span></td>
+        <td style="padding-left: 0.3cm;"><span><img class="logo_size logocell_height" src="../../assets/svl5ykb5fd5qiusazsse.png" alt=""></span></td>
+    </tr>
+</table> -->
+
+<hr>
+<p class="H2_Format">Lorem</p>
+<table class="tabletext_Format table_Format">
+        <tr class="tableHeader">
+            <td class="cell"><div class="tablename">NAME</div></td>
+            <td class="cell"><div class="tableage">AGE</div></td>
+            <td class="cell"><div class="tableid">ID</div></td>
+            <td class="cell"><div class="tablenote">NOTE</div></td>
+        </tr>
+
+        <tr *ngFor="let list of lists">
+            <td class="cell"><div>{{list.name}}</div></td>
+            <td class="cell"><div class="tablebodyfont">{{list.age}}</div></td>
+            <td class="cell"><div class="tablebodyfont">{{list.id}}</div></td>
+            <td class="cell"><div class="tablebodyfont">{{list.note}}</div></td>
+        </tr>
+</table>
+<br>
+
+<table class="nulltable">
+    <tr>
+        <td class="cell">這裡是lala over</td>
+        <td class="cell">今天忘記吃藥了!</td>
+    </tr>
+    <tr>
+        <td class="cell">小黃花從出生那年就飄著</td>
+        <td class="cell">搜拉稀稀稀稀拉希拉搜</td>
+    </tr>
+</table>
+</div>

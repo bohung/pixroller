@@ -1,0 +1,141 @@
+
+
+
+@page{
+size: letter;
+background-color: white;
+margin-top: 2.2cm;
+margin-bottom: 1.5cm;
+margin-left: 5.6cm;
+margin-right: 5.6cm;
+/* 第一步：先製作page的底部 */
+border-bottom: 0.5pt black solid;
+@bottom-center{
+    content: "Dorrit Studio";
+    font-size: 12pt;
+    font-family: BO;
+}
+}
+
+@font-face {
+    font-family: BO;
+    src: url(../../assets/Bodoni 72 Smallcaps Book.ttf);
+}
+
+
+.H1_Format{
+text-align: center;
+font-size: 24pt;
+margin-top: -2cm;
+font-family: BO;
+
+
+}
+
+.P_Format{
+    text-align: center;
+    line-height: 0pt;
+    font-size: 10pt;
+    font-family: BO;
+    }
+
+    /* .logos{
+        display: flex;
+        justify-content: center;
+    } */
+
+    .logoline{
+        Vertical-align: middle;
+        font-size: 350%;
+        border-left: 1px solid black;
+        margin-left: 0.4cm;
+        margin-right: 0.4cm;
+        text-align: center; 
+
+    }
+
+/* .logotable{
+ 想讓表格在文件中間但沒辦法~~ 
+}*/
+/*
+.logocell{
+    border-right: 0.5pt black solid;
+    padding: 0.3cm;
+}
+ */
+
+
+.H2_Format{
+    text-align: center;
+    line-height: 0pt;
+    font-size: 18pt;
+    font-family: BO;
+    }
+
+.tabletext_Format{
+    text-align: center;
+    font-size: 10pt;
+    font-family: BO;
+    }
+
+.table_Format{
+    border: 0.5pt black solid;
+    border-collapse:collapse;
+
+    }
+
+.cell{
+    border: 0.5pt black solid;
+    border-collapse:collapse; 
+    /* 兩條框線重疊 */
+    height: 0.55cm;
+
+}
+
+.tableHeader{
+    height: 0.75cm;
+    background-color: #d0d0d0;
+    /* 想用cmyk但用不出來~ */
+}
+
+.tablename{
+    width: 2.4cm;
+}
+
+.tableage{
+    width: 1.7cm;
+}
+
+.tableid{
+    width: 3.2cm;
+}
+
+.tablenote{
+    width: 2.6cm;
+}
+
+.toplogo{
+    width: 3cm;
+    height: 2.8cm;
+    opacity: 0.3;
+    margin-left: 3.5cm;
+    margin-right: 3.5cm;
+  }
+
+.nulltable{
+    height: 8.6cm;
+    width: 10.3cm;
+    border-collapse:collapse; 
+    font-family: BO;
+
+}
+
+.tablebodyfont{
+    font-family: Calibri, sans-serif;
+}
+
+.logo_size{
+    width: 2.8cm;
+    height: 2.8cm;
+    Vertical-align: middle;
+  }

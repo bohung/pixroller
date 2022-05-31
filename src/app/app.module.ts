@@ -6,8 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Template1Component } from './template1/template1.component';
 
-import {SafePipe} from './safe.pipe';
-import { DatabindingExampleComponent } from './databinding-example/databinding-example.component'
+//import {SafePipe} from './safe.pipe';
+//import { DatabindingExampleComponent } from './databinding-example/databinding-example.component'
 
 import {SafePipe} from './safe.pipe';
 import { DatabindingExampleComponent } from './databinding-example/databinding-example.component';
@@ -15,6 +15,7 @@ import { DatabindingPractice1Component } from './databinding-practice1/databindi
 import { LTRMPDEXLECA22000Component } from './render/template/LTR_MPD_EXL_ECA22_1_000/ltrmpdexleca22000.component';
 import { RenderComponent } from './render/render.component';
 import { ECAPracticeComponent } from './render/template/eca-practice/eca-practice.component';
+import { XXX0520Component } from './xxx0520/xxx0520.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ECAPracticeComponent } from './render/template/eca-practice/eca-practic
     LTRMPDEXLECA22000Component,
     RenderComponent,
     ECAPracticeComponent,
+    XXX0520Component,
   ],
   imports: [
     BrowserModule,
