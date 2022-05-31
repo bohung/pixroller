@@ -1,0 +1,123 @@
+/* @page { 
+    size: letter;
+    background-color: rgb(249, 224, 244);
+    margin-left: 2cm;
+    margin-top: 2cm;
+    margin-right: 2cm; 
+    margin-bottom: 2cm;
+    bleed: 3mm;
+    mark: crop;
+
+} */
+
+@page { 
+    size: letter;
+    background-color: rgb(187, 231, 232);
+    @top-left{
+        content:"Hello";
+    }
+
+    @bottom-right {
+        content:counter(page);
+    }
+
+    @bottom-center {
+        content:string(footer)      
+    }
+}
+
+.AAA{
+page: BBB;
+}
+
+@page BBB{ 
+    size: letter;
+    background-color: rgb(162, 211, 160);
+    @top-left{
+        content:"Hello";
+    }
+
+    @bottom-right {
+        content:counter(page);
+    }
+
+    @bottom-center {
+        content:string(footer)      
+    }
+    
+}
+
+@page CCC{ 
+    size: letter;
+    background-color: rgb(187, 232, 187);
+    @top-left{
+        content:"Hello";
+    }
+
+    @bottom-right {
+        content:counter(page);
+    }
+
+    @bottom-center {
+        content:string(footer)      
+    }
+    
+}
+
+.footerText{
+    string-set:footer content(text);   
+}
+
+
+.page_break{
+    break-after:page;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footerText{
+    string-set:footer content(test);
+}
+
+.Box{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+
+.Box2{
+    background-color: rgb(194, 80, 200);
+    position: relative;
+    width: 150px;
+    height: 150px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box1{
+    background-color: rgb(85, 129, 203);
+    position: relative;
+    width: 180px;
+    height: 180px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

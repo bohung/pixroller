@@ -1,0 +1,166 @@
+@page {
+    size: letter;
+    background-color: #ffffff;
+    margin-top: 0in;
+    margin-left: 2.285in;
+    margin-right: 2.285in;
+    margin-bottom: 0.56in;
+    font-family: Bodoni_72 Book;
+    border: 0;
+    border-bottom: 1px solid black;
+
+    @bottom-center {
+        content: "Dorrit Studio";
+        font-size: 12pt;
+        margin-bottom: 15px;   
+    }
+}
+
+.hr1 {
+    border: 0;
+    border-bottom: 1.5px solid black;
+}
+
+/* 第1層---------------------------------------------------------------- */
+.leaf_textBox {
+    height: 2.286in;
+}
+.leaflogo{
+    position: relative;
+    padding-top: 0.77in;
+    padding-left: 1.35in;
+}
+.leafImg {
+    height: 1.2in;
+    opacity: 0.3;
+}
+.leaftext {
+    position: relative;
+    top: -85px;
+    left: 93px;
+    font-size: 24pt;
+}
+
+/* 第2層---------------------------------------------------------------- */
+.articleBox {
+    height: 0.83in;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.textbox {   
+    width: 266px;
+    font-size: 10pt;
+    line-height: 15px;    
+}
+
+/* 第3層---------------------------------------------------------------- */
+ .logox3{   
+    height: 1.236in;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap:nowrap; */
+    justify-content:flex-start;
+    align-items: center; 
+}
+.logo-L{
+    width: 1.34in;
+    height: 1.32in;
+}
+.logo-C{ 
+    width: 1.26in;
+    height: 0.83in;
+    border-left: 1px solid black;   
+}
+.logo-P{ 
+    width: 1.3in;
+    height: 0.87in;
+    border-left: 1px solid black;
+}
+
+.Imglogo-L{
+    width: 1.315in;
+    position: relative;
+    top: 3px;
+    left: -3px;
+}
+.Imglogo-C{
+    width: 1.6867in;
+    position: relative;
+    top: -39px;
+    left: -21px;
+}
+.Imglogo-P{
+    width: 1.0417in;
+    position: relative;
+    top: -8px;
+    left: 16px;
+}
+
+/* 第4層---------------------------------------------------------------- */
+.LoremTableBOX{
+    height: 1.25in; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items: center;     
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 10pt;
+    height: 0.55cm;    /*0.5cm*/
+}
+
+table{
+    border-collapse:collapse;
+}
+
+caption{    
+    height: 0.75cm;
+    font-size: 18pt;
+    padding-bottom: 35px;
+}
+
+th{
+    background-color: rgb(217, 217, 217); 
+    height: 0.2901in;
+}
+
+.LoremTBody1{
+    width: 0.9751in;
+}
+.LoremTBody2{
+    width: 0.665in;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.LoremTBody3{
+    width: 1.2725in;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.LoremTBody4{
+    width: 1.0376in;
+}
+
+/* 第5層---------------------------------------------------------------- */
+
+.table2{    
+    padding-top: 0.25in;    
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.MiniHugTable{ 
+    background-color: rgb(24, 36, 69); 
+    width: 100%;   
+    height: 3.425in;
+}
+
+.MiniHug{
+    width: 80%;
+} 
