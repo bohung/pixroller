@@ -1,0 +1,173 @@
+@font-face{
+    font-family: "Bodoni 72 Smallcaps Book";
+    src: url("../../../../assets/Bodoni 72 Smallcaps Book.ttf");
+    /* format("truetype")為什麼要寫這個？ */
+}
+
+@page{
+    size: letter;
+    background-color: white;
+    margin-top: 1.95cm;
+    margin-bottom: 1.05cm;
+    margin-left:  5.6cm;
+    margin-right: 5.6cm;
+    @bottom-center{
+        content:string(header);
+        align-items: flex-start;
+        font-size: 12pt;
+        font-family: "Bodoni 72 Smallcaps Book";
+    }
+}
+
+.header{
+    string-set:header content(text);
+    font-size: 24pt;
+    position: absolute;
+    margin-top: -2cm;
+    margin-left: 2.95cm;
+    font-family: "Bodoni 72 Smallcaps Book";
+}
+
+.subheader{
+    text-align: center;
+    font-size: 18pt;
+    font-family: "Bodoni 72 Smallcaps Book";
+}
+
+.bodytext{
+    text-align: center;
+    font-size: 10pt;
+    font-family: "Bodoni 72 Smallcaps Book";
+    font-weight: 500;
+}
+
+.number{
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.line{
+    width: 10cm;
+    border:0; 
+    height:1px; 
+    background-color: black;
+}
+
+.line1{
+    margin-top: 0.8cm;
+}
+
+.line4{
+    margin-top: 2.4cm;
+}
+
+.picturegroup{
+    display: flex;
+    align-items: center;
+    margin-top: -0.5cm;
+    margin-bottom: -0.5cm;
+}
+
+.vertical{
+    width: 1;
+    border-style: solid;
+    height: 2.2cm; 
+    background-color: black;
+}
+
+.vertical-1{
+    margin-left: 0.1cm;
+}
+
+.vertical-2{
+    margin-left: -0.5cm;
+}
+
+.picture1{
+    width: 3.08cm;
+    height: 3.02cm;
+    opacity: 0.3;
+    margin-left: 3.75cm;
+}
+
+.picture2{
+    width: 3.43cm;
+    height: 3.38cm;
+    margin-left: 0.15cm;
+}
+
+.picture3{
+    width: 4.26cm;
+    height: 4.26cm;
+    margin-left: -1.3cm;
+}
+
+.picture4{
+    width: 2.66cm;
+    height: 2.66cm;
+    padding-right: 0.4cm;
+}
+
+.table1{
+    width: 10cm;
+    border: 0.5pt solid;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top: 0.2cm;
+    border-collapse:collapse;
+}
+
+.row-1{
+    background-color: rgb(203, 203, 203);
+    height: 0.75cm;
+}
+
+.row2-4{
+    height: 0.55cm;
+    border-top: 0.5pt solid;
+}
+
+.column-1{
+    width: 2.5cm;
+}
+
+.column-2{
+    width: 1.5cm;
+    border-left: 0.5pt solid;
+}
+
+.column-3{
+    width: 3.5cm;
+    border-left: 0.5pt solid;
+}
+.column-4{
+    width: 2.5cm;
+    border-left: 0.5pt solid;
+}
+
+.table2{
+    margin-top: 0.5cm;
+    width: 10cm;
+    height: 8cm;
+    border: 0.5pt solid;
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse:collapse;
+}
+
+.leftline{
+    border-left: 0.5pt solid;
+}
+
+.centerline{
+    border-top: 0.5pt solid;
+}
+
+.column{
+    width: 5cm;
+}
+
+.row{
+    height: 4cm;
+}

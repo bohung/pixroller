@@ -1,0 +1,26 @@
+/* test */
+.pageTest{
+    page:test;
+}
+
+@page{
+    size: letter;
+    background-color: cornsilk;
+    margin-bottom: 2cm;
+    @bottom-left{
+        content: string(footer)
+    }
+}
+
+@page test{
+    size: letter;
+    background-color: dodgerblue;
+}
+
+.footerText{
+    string-set:footer content(text);
+}
+
+.page_break{
+    break-after: page;
+}
