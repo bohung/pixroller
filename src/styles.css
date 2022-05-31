@@ -417,3 +417,8 @@ body {
   }
   /* mailinfomation:height:8.04cm */
   /* mail_Content:margin-top:0cm */
+
+@font-face {
+    font-family: "BO";
+    src: url("./assets/Bodoni 72 Smallcaps Book.ttf");
+  }

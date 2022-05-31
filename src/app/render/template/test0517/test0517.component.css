@@ -1,0 +1,164 @@
+.page0520{
+    page: TTT;
+}
+
+@page{
+    size: letter;
+    background-color: white;
+    margin-top: 0.875in;
+    margin-bottom: 0.5625in;
+    margin-left: 2.25in;
+    margin-right: 2.25in;
+    border-bottom: 1pt solid black;
+    font-family: BO;
+    @bottom-center{
+        content: "Dorrit Studio";
+        font-size: 12pt;
+    }
+}
+
+@page TTT {
+    size: letter;
+    background-color: white;
+}
+
+.logoPart{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 30mm;
+    margin-bottom: 10.45mm;
+}
+
+.logoText{
+    display:flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24pt;
+    z-index: 1;
+  }
+
+.logoImg1{
+    display:flex;  
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }  
+
+.logoImg2{
+    width: 1.25in;
+    opacity: 30%;
+    z-index: 2;
+  }
+
+.contentText{
+    text-align: center;
+    font-size: 10pt;
+    line-height: 10%;
+    border-top: 1pt solid black;
+    padding-top: 1mm;
+    padding-bottom: 0.7mm;
+    padding-left: 12mm;
+    padding-right: 12mm;
+  }
+
+.logos{
+    border-top: 1pt solid black;
+    border-bottom: 1pt solid black;
+    width: 100%;
+}
+
+.Img3logo{
+    width: 1.25in;
+}
+
+.tableTitle{
+    text-align: center;
+    font-size: 16pt;
+    margin-top: 2.75mm;
+    margin-bottom: 1.5mm;
+    vertical-align: center;
+  }
+
+.table{
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+    border-width: 1pt;
+    margin-bottom: 0.27in;
+}
+
+.border{
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+    border-width: 1pt;
+}
+
+.tableHead{
+    text-align: center;
+    height: 0.75cm;
+    background-color: lightgray;
+    font-size: 10pt;
+  }
+
+.tableBody{
+    text-align: center;
+    height: 0.55cm;
+    font-size: 10pt;
+    margin-bottom: 0.27in;
+  }
+
+.column1{
+    width: 0.97in;
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+    border-width: 1pt;
+  }
+
+.column2{
+    width: 0.675in;
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+    border-width: 1pt;
+  }
+
+.column3{
+    width: 1.275in;
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+    border-width: 1pt;
+  }
+
+.column4{
+    width: 1.04in;
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+    border-width: 1pt;
+  }
+
+.arialFont{
+    font-family: Arial;
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+    border-width: 1pt;
+}
+
+.emptyCells{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.empty1{
+  height: 43.3mm;
+  width: 51.15mm;
+  border-color: black;
+  border-style: solid;
+  border-width: 1pt;
+}
