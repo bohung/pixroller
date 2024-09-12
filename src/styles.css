@@ -1,6 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import url(//db.onlinewebfonts.com/c/d175500f64f832c70d093e9468a8cdbe?family=Bodoni+Book+SSi); */
 
+ @font-face {
+  font-family: "Arial Italic";
+  src: url("./assets/Arial Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial Bold Italic";
+  src: url("./assets/arialbi.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bodoni_72";
+  src: url("./assets/Bodoni 72.ttc") format("truetype");
+}
+
+@font-face {
+  font-family: "Bodoni_72 OS";
+  src: url("./assets/Bodoni 72 OS.ttc") format("truetype");
+}
+
+@font-face {
+  font-family: "Bodoni_72 Book";
+  src: url("./assets/Bodoni 72 Smallcaps Book.ttf") format("truetype");
+}
+
+
 /* @font-face {
   font-family: "Times New Roman Italic";
   src: url("./assets/Times New Roman Italic.ttf") format("truetype");
@@ -201,7 +227,8 @@ sup {
 
 /* 信件通用樣式（如有同命名不同樣式請在各自的樣板css做變動） */
 body {
-  background-color: rgb(98, 98, 98);
+  /* background-color: rgb(98, 98, 98); */
+  background-color: rgba(91, 104, 79, 0.62);
 }
 
 .adressInfo {

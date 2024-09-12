@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './databinding-practice1.component.html',
   styleUrls: ['./databinding-practice1.component.css']
 })
+
 export class DatabindingPractice1Component implements OnInit {
   light = "電燈"
 
